@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ButtonController.cs" />
+    <Compile Include="ButtonModel.cs" />
     <Compile Include="ButtonView.cs">
       <SubType>UserControl</SubType>
     </Compile>

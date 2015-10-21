@@ -14,7 +14,7 @@ namespace TicTacToe1
   {
     private ButtonController controller;
 
-    public ButtonView(ButtonController controller)
+    public ButtonView(ButtonController buttonController)
     {
       InitializeComponent();
       controller = buttonController;
