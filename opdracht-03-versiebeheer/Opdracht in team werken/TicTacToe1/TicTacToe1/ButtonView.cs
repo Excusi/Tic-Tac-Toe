@@ -12,14 +12,35 @@ namespace TicTacToe1
 {
   public partial class ButtonView : UserControl
   {
-    public ButtonView()
+    private ButtonController controller;
+
+    public ButtonView(ButtonController controller)
     {
       InitializeComponent();
+      controller = buttonController;
     }
 
     private void button1_Click(object sender, EventArgs e)
     {
+      if (!controller.Locked)
+      {
+        controller.onClick();
+      }
+    }
+
+    public void updateUI()
+    {
+    }
+
+    private void ButtonView_Load(object sender, EventArgs e)
+    {
 
     }
+
+    private void ButtonView_Load_1(object sender, EventArgs e)
+    {
+
+    }
+
   }
 }

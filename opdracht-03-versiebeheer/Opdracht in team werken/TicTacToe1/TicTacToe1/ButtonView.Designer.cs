@@ -46,6 +46,7 @@
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.Controls.Add(this.button1);
       this.Name = "ButtonView";
+      this.Load += new System.EventHandler(this.ButtonView_Load_1);
       this.ResumeLayout(false);
 
     }

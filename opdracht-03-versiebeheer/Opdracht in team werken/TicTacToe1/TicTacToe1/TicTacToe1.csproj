@@ -44,14 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="ButtonController.cs" />
+    <Compile Include="ButtonView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ButtonView.Designer.cs">
+      <DependentUpon>ButtonView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicTacToe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="TicTacToe.Designer.cs">
+      <DependentUpon>TicTacToe.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ButtonView.resx">
+      <DependentUpon>ButtonView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
