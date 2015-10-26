@@ -8,5 +8,61 @@ namespace TicTacToe1
 {
   class TicTacToeModel
   {
+    private List<ButtonController> buttons = new List<ButtonController>();
+
+    private int numberOfButtons = 0;
+    private int currentNumberOfClicks = 0;
+    private int maximumClicks = 0;
+
+    internal void addButton(ButtonController button)
+    {
+      buttons.Add(button);
+    }
+
+    public List<ButtonController> Buttons
+    {
+      get
+      {
+        return buttons;
+      }
+    }
+
+    public int numberOfClicks
+    {
+      get
+      {
+        return currentNumberOfClicks;
+      }
+    }
+
+    public int MaximumClicks
+    {
+      get
+      {
+        return maximumClicks;
+      }
+      set
+      {
+        maximumClicks = value;
+      }
+    }
+
+    public int NumberOfButtons
+    {
+      get
+      {
+        return numberOfButtons;
+      }
+      set
+      {
+        numberOfButtons = value;
+      }
+    }
+
+    public int addClick()
+    {
+      return ++currentNumberOfClicks;
+    }
+
   }
 }
