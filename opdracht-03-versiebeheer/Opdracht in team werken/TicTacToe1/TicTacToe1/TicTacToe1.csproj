@@ -60,6 +60,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicTacToeController.cs" />
+    <Compile Include="TicTacToeModel.cs" />
+    <Compile Include="TicTacToeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TicTacToeView.Designer.cs">
+      <DependentUpon>TicTacToeView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ButtonView.resx">
       <DependentUpon>ButtonView.cs</DependentUpon>
     </EmbeddedResource>
@@ -72,6 +80,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TicTacToeView.resx">
+      <DependentUpon>TicTacToeView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
