@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace TicTacToe1
 {
-  class ButtonModel
+  public class ButtonModel
   {
     private bool isLocked;
+    public String _value;
 
     public ButtonModel()
     {
@@ -22,7 +23,7 @@ namespace TicTacToe1
 
     public void onClick()
     {
-     
+      _value = "X";
     }
 
     public bool Locked

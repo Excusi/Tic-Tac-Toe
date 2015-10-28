@@ -8,7 +8,7 @@ namespace TicTacToe1
 {
   public class ButtonController
   {
-    private ButtonModel model;
+    public ButtonModel model;
     private ButtonView view;
 
     public ButtonController()
@@ -26,7 +26,7 @@ namespace TicTacToe1
     {
       if (!model.Locked)
       {
-        model.onClick();
+        model._value = "X";
         view.updateUI();
       }
     }

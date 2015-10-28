@@ -31,6 +31,7 @@ namespace TicTacToe1
 
     public void updateUI()
     {
+      button1.Text = controller.model._value;
     }
 
     private void ButtonView_Load(object sender, EventArgs e)
