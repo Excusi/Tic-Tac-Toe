@@ -10,7 +10,6 @@ namespace TicTacToe1
   {
     private bool isLocked;
 
-
     public ButtonModel()
     {
       isLocked = false;
@@ -21,6 +20,11 @@ namespace TicTacToe1
       isLocked = !isLocked;
     }
 
+    public void onClick()
+    {
+     
+    }
+
     public bool Locked
     {
       get
@@ -28,10 +32,5 @@ namespace TicTacToe1
         return isLocked;
       }
     }
-
-    public void onClick()
-    {
-    }
-
   }
 }

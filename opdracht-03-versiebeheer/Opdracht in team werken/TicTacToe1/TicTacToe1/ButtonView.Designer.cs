@@ -33,19 +33,22 @@
       // 
       // button1
       // 
-      this.button1.Location = new System.Drawing.Point(19, 17);
+      this.button1.Location = new System.Drawing.Point(10, 10);
+      this.button1.Margin = new System.Windows.Forms.Padding(0);
       this.button1.Name = "button1";
-      this.button1.Size = new System.Drawing.Size(109, 112);
+      this.button1.Padding = new System.Windows.Forms.Padding(10);
+      this.button1.Size = new System.Drawing.Size(130, 130);
       this.button1.TabIndex = 0;
+      this.button1.Text = "meep";
       this.button1.UseVisualStyleBackColor = true;
       this.button1.Click += new System.EventHandler(this.button1_Click);
       // 
       // ButtonView
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
       this.Controls.Add(this.button1);
       this.Name = "ButtonView";
+      this.Size = new System.Drawing.Size(150, 147);
       this.Load += new System.EventHandler(this.ButtonView_Load_1);
       this.ResumeLayout(false);
 

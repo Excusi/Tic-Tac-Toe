@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//mmeep//
 namespace TicTacToe1
 {
-  class ButtonController
+  public class ButtonController
   {
     private ButtonModel model;
     private ButtonView view;

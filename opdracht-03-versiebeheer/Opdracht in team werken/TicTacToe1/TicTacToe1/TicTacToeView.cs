@@ -14,6 +14,7 @@ namespace TicTacToe1
   {
 
     private TicTacToeController controller;
+    private int buttonRow = 3;
 
     public TicTacToeView(TicTacToeController ticTacToeController)
     {
@@ -25,14 +26,15 @@ namespace TicTacToe1
     {
       List<ButtonView> buttons = controller.getButtonsView();
       int buttonWidth = buttons.First().Width;
-      /*int buttonHeight = buttons.First().Heigth;*/ /*deze was nodig voor de smijt ze allemaal knop 
+      int buttonHeight = buttons.First().Height;/*deze was nodig voor de smijt ze allemaal knop 
       er onderaan bij te plaatsen -> kan dus van  PasswordPropertyTextAttribute komen? */
 
       foreach (ButtonView button in buttons)
       {
         ButtonView currentButton = button;
-        int xPos = buttons.IndexOf(button) * buttonWidth;
-        currentButton.Location = new Point(xPos, 0);
+        int xPos = buttons.IndexOf(button)%buttonRow * buttonWidth;
+        int yPos = buttons.IndexOf(button)/buttonRow * buttonHeight;
+        currentButton.Location = new Point(xPos, yPos);
         Controls.Add(currentButton);
       }
 

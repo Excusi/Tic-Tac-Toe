@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TicTacToe1
 {
-  class TicTacToeController
+  public class TicTacToeController
   {
     private GameController container;
 
@@ -27,7 +27,7 @@ namespace TicTacToe1
 
     private void createField()
     {
-      for (int buttonNumber = 0; buttonNumber < numberOfButtons; ++buttonNumber)
+      for (int buttonNumber = 0; buttonNumber < NumberOfButtons; ++buttonNumber)
       {
         ButtonController button = new ButtonController();
         model.addButton(button);
@@ -44,6 +44,11 @@ namespace TicTacToe1
         buttonsView.Add(buttonView);
       }
       return buttonsView;
+    }
+
+    public TicTacToeView getView()
+    {
+      return view;
     }
 
     public int MaximumClicks
@@ -66,15 +71,15 @@ namespace TicTacToe1
       }
     }
 
-    public int numberOfButtons
+    public int NumberOfButtons
     {
       get
       {
-        return model.numberOfButtons;
+        return model.NumberOfButtons;
       }
       set
       {
-        model.numberOfButtons = value;
+        model.NumberOfButtons = value;
       }
     }
 
