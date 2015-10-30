@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -51,25 +51,6 @@ namespace TicTacToe1
       return view;
     }
 
-    public int MaximumClicks
-    {
-      get
-      {
-        return model.MaximumClicks;
-      }
-      set
-      {
-        model.MaximumClicks = value;
-      }
-    }
-
-    public int CurrentNumberOfClicks
-    {
-      get
-      {
-        return model.numberOfClicks;
-      }
-    }
 
     public int NumberOfButtons
     {
