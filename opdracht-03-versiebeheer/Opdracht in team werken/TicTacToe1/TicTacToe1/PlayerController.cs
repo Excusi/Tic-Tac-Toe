@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace TicTacToe1
 {
-  class PlayerController
+  public class PlayerController
   {
+    private PlayerView view;
+    private PlayerModel model;
+
+
+   
   }
 }

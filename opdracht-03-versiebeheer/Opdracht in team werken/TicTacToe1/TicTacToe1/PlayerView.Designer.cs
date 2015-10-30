@@ -28,10 +28,32 @@
     /// </summary>
     private void InitializeComponent()
     {
-      components = new System.ComponentModel.Container();
+      this.turn = new System.Windows.Forms.Label();
+      this.SuspendLayout();
+      // 
+      // turn
+      // 
+      this.turn.AutoSize = true;
+      this.turn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+      this.turn.Location = new System.Drawing.Point(103, 46);
+      this.turn.Name = "turn";
+      this.turn.Size = new System.Drawing.Size(29, 13);
+      this.turn.TabIndex = 0;
+      this.turn.Text = "Turn";
+      // 
+      // PlayerView
+      // 
+      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.Controls.Add(this.turn);
+      this.Name = "PlayerView";
+      this.ResumeLayout(false);
+      this.PerformLayout();
+
     }
 
     #endregion
+
+    private System.Windows.Forms.Label turn;
   }
 }
