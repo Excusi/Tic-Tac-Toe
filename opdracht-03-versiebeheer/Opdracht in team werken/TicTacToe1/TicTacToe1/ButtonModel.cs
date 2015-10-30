@@ -8,29 +8,26 @@ namespace TicTacToe1
 {
   public class ButtonModel
   {
-    private bool isLocked;
+    private int player = 1;
     public String _value;
 
-    public ButtonModel()
+    public void PlayerChange()
     {
-      isLocked = false;
+      if (player == 1)
+      {
+        player = 2;
+      }
+      else
+      {
+        player = 1;
+      }
     }
 
-    public void toggleLocked()
-    {
-      isLocked = !isLocked;
-    }
-
-    public void onClick()
-    {
-      _value = "X";
-    }
-
-    public bool Locked
+    public int Player
     {
       get
       {
-        return isLocked;
+        return player;
       }
     }
   }

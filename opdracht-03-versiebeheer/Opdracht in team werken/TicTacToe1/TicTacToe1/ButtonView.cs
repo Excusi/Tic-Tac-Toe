@@ -23,10 +23,8 @@ namespace TicTacToe1
 
     private void button1_Click(object sender, EventArgs e)
     {
-      if (!controller.Locked)
-      {
         controller.onClick();
-      }
+ 
     }
 
     public void updateUI()

@@ -11,8 +11,6 @@ namespace TicTacToe1
     private List<ButtonController> buttons = new List<ButtonController>();
 
     private int numberOfButtons = 0;
-    private int currentNumberOfClicks = 0;
-    private int maximumClicks = 0;
 
     internal void addButton(ButtonController button)
     {
@@ -27,26 +25,6 @@ namespace TicTacToe1
       }
     }
 
-    public int numberOfClicks
-    {
-      get
-      {
-        return currentNumberOfClicks;
-      }
-    }
-
-    public int MaximumClicks
-    {
-      get
-      {
-        return maximumClicks;
-      }
-      set
-      {
-        maximumClicks = value;
-      }
-    }
-
     public int NumberOfButtons
     {
       get
@@ -58,11 +36,5 @@ namespace TicTacToe1
         numberOfButtons = value;
       }
     }
-
-    public int addClick()
-    {
-      return ++currentNumberOfClicks;
-    }
-
   }
 }
